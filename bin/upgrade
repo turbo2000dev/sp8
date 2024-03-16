@@ -1,0 +1,8 @@
+#/bin/csh
+flutter upgrade
+flutter pub get
+flutter precache --ios
+cd ios
+pod update
+pod install --repo-update
+cd ..

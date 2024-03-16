@@ -1,0 +1,175 @@
+{
+    "name": "SuperPari des Copains 2",
+    "image": "football.jpg",
+    "bets": {
+        "1": {
+            "status": "open",
+            "definition": {
+                "id": "1",
+                "name": "Qui gagne le pile ou face?",
+                "description": "Quelle equipe gagnera le pile ou face au debut du match?",
+                "notes": "",
+                "amount": 2.0,
+                "bet_type": "multipleChoices",
+                "choices": [
+                    "Ram de Los Angeles",
+                    "Bengals de Cincinnati"
+                ],
+                "choices_abbreviation": [
+                    "LAR",
+                    "CIN"
+                ],
+                "mandatory": false,
+                "duplicates_allowed": true
+            }
+        },
+        "2": {
+            "status": "open",
+            "definition": {
+                "id": "2",
+                "name": "Score Final",
+                "description": "Quelle equipe gagnera et par combien de points?",
+                "notes": "Le gagnant sera celui ou celle qui aura determine la bonne equipe et dont l'ecart predit se rapproche le plus de l'ecart reel (sans le depasser).",
+                "bet_type": "closestUnderWithChoices",
+                "unit_type": "integer",
+                "choices": [
+                    "Ram de Los Angeles",
+                    "Bengals de Cincinnati"
+                ],
+                "choices_abbreviation": [
+                    "LAR",
+                    "CIN"
+                ],
+                "amount": 10.0,
+                "mandatory": true,
+                "duplicates_allowed": false
+            }
+        },
+        "3": {
+            "status": "open",
+            "definition": {
+                "id": "3",
+                "name": "Duree de l'hymne",
+                "description": "Quelle sera la duree de la prestation de l'hymne national?",
+                "notes": "Le gagnant sera celui ou celle qui sera le plus proche du temps reel, qu'il le depasse ou non.",
+                "bet_type": "closest",
+                "unit_type": "timeMinutes",
+                "amount": 3.0,
+                "mandatory": false,
+                "duplicates_allowed": false
+            }
+        },
+        "4": {
+            "status": "open",
+            "definition": {
+                "id": "4",
+                "name": "Breuvage",
+                "description": "Quel sera le premier breuvage a etre le sujet d'une publicite?",
+                "notes": "On parle ici d'un message publicitaire de 30 secondes et qui sera diffuse apres le botte d'envoi.",
+                "bet_type": "multipleChoices",
+                "choices": [
+                    "Budweiser",
+                    "Bud Light",
+                    "Coors",
+                    "Coors Light",
+                    "Michelob Ultra Organic Seltzer",
+                    "Autre"
+                ],
+                "amount": 1.0,
+                "mandatory": false,
+                "duplicates_allowed": true
+            }
+        },
+        "5": {
+            "status": "open",
+            "definition": {
+                "id": "5",
+                "name": "Couleur du Gatorade",
+                "description": "Quel sera la couleur du Gatorade qui sera verse sur l'entraineur-chef de l'equipe gagnante a la fin du match?",
+                "notes": "",
+                "bet_type": "multipleChoices",
+                "choices": [
+                    "Orange",
+                    "Jaune",
+                    "Bleu",
+                    "Mauve",
+                    "Vert",
+                    "Rouge",
+                    "Autre"
+                ],
+                "amount": 2.0,
+                "mandatory": false,
+                "duplicates_allowed": true
+            }
+        },
+        "6": {
+            "status": "open",
+            "definition": {
+                "id": "6",
+                "name": "Nbre de quarts avec ecart de 3 pts et -",
+                "description": "Combien de quarts se termineront avec un ecart de trois points ou moins?",
+                "bet_type": "multipleChoices",
+                "choices": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "amount": 3.0,
+                "mandatory": false,
+                "duplicates_allowed": true
+            }
+        },
+        "7": {
+            "status": "open",
+            "definition": {
+                "id": "7",
+                "name": "Nbre total de points",
+                "description": "Quel sera le total de points des deux equipes a la fin du match?",
+                "notes": "Le gagnant sera celui ou celle qui sera le plus proche du total de points, qu'il le depasse ou non.",
+                "bet_type": "closest",
+                "unit_type": "integer",
+                "amount": 3.0,
+                "mandatory": false,
+                "duplicates_allowed": true
+            }
+        },
+        "8": {
+            "status": "open",
+            "definition": {
+                "id": "8",
+                "name": "Premier a faire une prestation",
+                "description": "Quel est l'artiste qui sera le premier a faire une prestation lors du spectacle de la mi-temps?",
+                "bet_type": "multipleChoices",
+                "choices": [
+                    "Mary J. Blinge",
+                    "Dr Dre",
+                    "Snoop Dog",
+                    "Eminem",
+                    "Un autre artiste",
+                    "Plus d'un artiste"
+                ],
+                "amount": 2.0,
+                "mandatory": false,
+                "duplicates_allowed": true
+            }
+        },
+        "9": {
+            "status": "open",
+            "definition": {
+                "id": "9",
+                "name": "Ickey Shuffle",
+                "description": "Est-ce que Joe Blow fera le fameux Ickey Shuffle lors du match?",
+                "bet_type": "multipleChoices",
+                "choices": [
+                    "Oui",
+                    "Non"
+                ],
+                "amount": 1.0,
+                "mandatory": false,
+                "duplicates_allowed": true
+            }
+        }
+    }
+}

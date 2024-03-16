@@ -1,0 +1,18 @@
+{
+    "betParticipations": [
+        {
+            "participantId": "abo",
+            "betId": "1",
+            "isParticipating": true,
+            "choice": "LAR",
+            "answer": ""
+        },
+        {
+            "participantId": "mike",
+            "betId": "1",
+            "isParticipating": true,
+            "choice": "CIN",
+            "answer": ""
+        }
+    ]
+}
