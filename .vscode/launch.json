@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Tests",
+            "type": "dart",
+            "request": "launch",
+            "program": "./test/"
+        },
+        {
+            "name": "Development",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define=ENV=dev",
+                "--dart-define=SENTRY_DSN=https://26f27b6d5fcecd4fcdee99ceb3075a40@o4506843300691968.ingest.us.sentry.io/4506843302658048",
+                "--dart-define=MIXPANEL=f5a2d7c26e99da3674eafb0fdd189af7",
+            ]
+        }
+    ]
+}

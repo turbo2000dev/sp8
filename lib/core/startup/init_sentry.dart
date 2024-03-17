@@ -1,16 +1,19 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter/material.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
-import 'package:sp8/core/environments/environnements.dart';
+// import 'package:sp8/core/environments/environnements.dart';
 
-Future<void> initSentry({required ProviderContainer container, required void Function() appRunner}) async {
-  final env = container.read(environmentProvider);
+Future<void> initSentry({String sentryDsn = "", required Widget rootWidget}) async {
+  // final env = container.read(environmentProvider);
 
-  await SentryFlutter.init((options) {
-    options.dsn = env.sentryDsn;
-    options.tracesSampleRate =
-        1.0; // 100% of traces will be sent to Sentry server. You should start with 1 and decrease it once you have more users.
-    options.environment = env.name;
-  }, appRunner: appRunner);
-
-  container.dispose();
+  await SentryFlutter.init(
+    (options) {
+      options.dsn = sentryDsn;
+      // Set tracesSampleRate to 1.0 to capture 100% of transactions for performance monitoring.
+      // We recommend adjusting this value in production.
+      options.tracesSampleRate = 1.0;
+      options.attachScreenshot = true;
+    },
+    // ignore: missing_provider_scope
+    appRunner: () => runApp(rootWidget),
+  );
 }
