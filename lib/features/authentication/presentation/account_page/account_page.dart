@@ -5,7 +5,6 @@ import 'package:sp8/core/common_widgets/primary_button.dart';
 import 'package:sp8/core/common_widgets/responsive_center.dart';
 import 'package:sp8/core/common_widgets/secondary_button.dart';
 import 'package:sp8/core/constants/app_sizes.dart';
-// import 'package:sp8/features/authentication/data/auth_repository.dart';
 import 'package:sp8/core/common_widgets/avatar.dart';
 import 'package:sp8/features/authentication/presentation/auth_controller.dart';
 import 'package:sp8/features/authentication/presentation/change_avatar_screen/change_avatar_screen.dart';

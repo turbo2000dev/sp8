@@ -49,6 +49,7 @@ dependencies:
 
   desktop_window: ^0.4.0
   sentry_flutter: ^7.18.0
+  logger: ^2.1.0
 
   #font_awesome_flutter: ^10.5.0
   #google_fonts: ^6.1.0
